@@ -91,6 +91,7 @@ def example_astronauts():
         print(f"{name} is currently in space flying on the {craft}! {greeting}")
         print("Welcome to Astro Airflow !")
         print("This is a test line")
+        print("This is a demo")
 
     # Use dynamic task mapping to run the print_astronaut_craft task for each
     # Astronaut in space

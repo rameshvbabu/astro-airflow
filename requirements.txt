@@ -2,3 +2,4 @@
 beautiful-date
 numpy
 pip-date
+sshtunnel==0.4.0
