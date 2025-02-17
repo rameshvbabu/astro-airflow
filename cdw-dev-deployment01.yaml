@@ -1,0 +1,41 @@
+deployment:
+    configuration:
+        name: cdw-dev-deployment01
+        description: ""
+        runtime_version: 12.7.0
+        dag_deploy_enabled: true
+        ci_cd_enforcement: false
+        scheduler_size: SMALL
+        is_high_availability: false
+        is_development_mode: false
+        executor: CELERY
+        scheduler_count: 1
+        workspace_name: CDW Dev Datahub
+        deployment_type: STANDARD
+        cloud_provider: GCP
+        region: us-central1
+        default_task_pod_cpu: "0.25"
+        default_task_pod_memory: 0.5Gi
+        resource_quota_cpu: "10"
+        resource_quota_memory: 20Gi
+        workload_identity: ""
+    worker_queues:
+        - name: default
+          max_worker_count: 10
+          min_worker_count: 0
+          worker_concurrency: 5
+          worker_type: A5
+    metadata:
+        deployment_id: cm74oma2904sg01hq86ah0lc0
+        workspace_id: cm747zzx10ekr01ilr0zt9yot
+        cluster_id: N/A
+        release_name: N/A
+        airflow_version: 2.10.5
+        current_tag: 12.7.0
+        status: HEALTHY
+        created_at: 2025-02-14T11:25:01.574Z
+        updated_at: 2025-02-17T07:06:04.318Z
+        deployment_url: cloud.astronomer.io/cm747zzx10ekr01ilr0zt9yot/deployments/cm74oma2904sg01hq86ah0lc0/overview
+        webserver_url: cm6ldee9z0nof01md295nshx1.astronomer.run/d6ah0lc0?orgId=org_6vH5aah83B61O0zA
+        airflow_api_url: cm6ldee9z0nof01md295nshx1.astronomer.run/d6ah0lc0/api/v1
+
